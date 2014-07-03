@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandingActivity" 
+    android:paddingLeft="@dimen/dp_45"
+    android:paddingRight="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_10"
+    android:background="@drawable/landingpage_background"
+    >
+
+<RelativeLayout
+    android:layout_width="@dimen/dp_200"
+    android:layout_height="@dimen/dp_120"
+    android:background="@drawable/namesection"
+    android:layout_centerHorizontal="true"
+    >
+    <TextView 
+        android:id="@+id/txtHomeTeacherName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#00BB00"
+        android:text="Mr. Smith"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/sp_18"
+        />
+    </RelativeLayout>
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/lay_Home_Settings"
+    android:orientation="horizontal"
+    android:weightSum="1.0"
+    android:layout_marginBottom="@dimen/dp_5"
+        >
+            <LinearLayout 
+                android:id="@+id/lay_Home_Attendance"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight=".333"
+        >
+
+    <ImageView 
+        android:layout_width="@dimen/dp_63"
+    android:layout_height="@dimen/dp_81"
+    android:src="@drawable/attendance"
+        android:layout_gravity="center_horizontal"
+    />
+        <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Attendance" 
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/sp_15"
+        /> -->
+    </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/lay_Home_Grade"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight=".333"
+        >
+
+    <ImageView 
+        android:layout_width="@dimen/dp_63"
+    android:layout_height="@dimen/dp_81"
+    android:src="@drawable/grade"
+        android:layout_gravity="center_horizontal"
+    />
+        <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Grade" 
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/sp_15"
+        /> -->
+    </LinearLayout>
+                        <LinearLayout 
+                android:id="@+id/lay_Home_Reports"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight=".333"
+        >
+
+    <ImageView 
+        android:layout_width="@dimen/dp_63"
+    android:layout_height="@dimen/dp_81"
+    android:src="@drawable/reports"
+        android:layout_gravity="center_horizontal"
+    />
+      <!--   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Reports" 
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/sp_15"
+        android:shadowColor="#FF0000"
+        android:shadowDy="15"
+        android:shadowRadius="15"
+        android:shadowDx="15"
+        /> -->
+    </LinearLayout>
+            </LinearLayout>
+    <LinearLayout 
+                android:id="@+id/lay_Home_Settings"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:orientation="horizontal"
+        >
+        <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Settings" 
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/sp_15"
+        android:layout_marginRight="@dimen/dp_6"
+        /> -->
+
+    <ImageView 
+        android:layout_width="@dimen/dp_79"
+    android:layout_height="@dimen/dp_29"
+    android:src="@drawable/setting"
+    />
+    </LinearLayout>
+</RelativeLayout>

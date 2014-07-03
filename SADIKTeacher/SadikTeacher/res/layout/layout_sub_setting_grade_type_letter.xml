@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_3"
+    android:paddingBottom="@dimen/dp_3"
+    android:orientation="horizontal"
+    android:weightSum="1.0" >
+
+    <EditText
+        android:id="@+id/edit_sub_setting_grade_type_letter_name"
+        style="@style/styleEditText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".18" />
+
+    <TextView
+        style="@style/styleText_singleline_black_14"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".09"
+        android:gravity="center"
+        android:text="@string/equal" />
+
+    <EditText
+        android:id="@+id/edit_sub_setting_grade_type_letter_min"
+        style="@style/styleEditText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:inputType="numberDecimal"
+        android:maxLength="@integer/percentage_max_length"
+        android:layout_weight=".18" />
+
+    <TextView
+        style="@style/styleText_singleline_black_14"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:text="@string/to" />
+
+    <EditText
+        android:id="@+id/edit_sub_setting_grade_type_letter_max"
+        style="@style/styleEditText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:inputType="numberDecimal"
+       android:maxLength="@integer/percentage_max_length"
+        android:layout_weight=".18" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".05" />
+
+    <Button
+        android:id="@+id/btn_sub_setting_grade_type_letter_Remove"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".23"
+        android:background="@drawable/round_red_bg"
+        android:paddingBottom="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_4"
+        android:text="@string/Remove"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_13" />
+
+</LinearLayout>

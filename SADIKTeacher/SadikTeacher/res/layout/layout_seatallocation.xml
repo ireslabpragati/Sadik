@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/dp_4"
+    android:layout_margin="@dimen/dp_4"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    
+<ImageView 
+    android:id="@+id/img_screen_logo"
+    android:layout_width="@dimen/dp_30"
+    android:layout_height="@dimen/dp_30"
+    android:src="@drawable/profile_icon"
+    />
+<View 
+    android:id="@+id/view_underLine"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_1"
+    android:layout_alignBottom="@+id/img_screen_logo"
+    android:layout_toRightOf="@+id/img_screen_logo"
+    android:background="#B4B4B4"
+    android:layout_marginLeft="@dimen/dp_15"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Seat_Allocation"
+    android:layout_alignRight="@+id/view_underLine"
+    android:layout_above="@+id/view_underLine"
+	style="@style/styleText_singleline_black_14"
+    />
+
+</RelativeLayout>
+    <TextView
+        android:text="@string/Select_Class"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+	style="@style/styleText_singleline_black_14"
+    android:layout_marginTop="@dimen/dp_5"
+        />
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="@dimen/dp_5"
+    android:background="#88FFFFFF"
+    >
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <TextView
+                style="@style/styleText_singleline_black_14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="@string/School" />
+
+            <TextView
+                android:id="@+id/txt_assignmentDetails_School_id"
+                style="@style/styleText_singleline_black_14"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height"
+                android:layout_weight=".7"
+                android:text="S001"
+                android:tag="S001"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <TextView
+                style="@style/styleText_singleline_black_14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="@string/Class" />
+
+            <Spinner
+                android:id="@+id/spin_assignmentDetails_Class"
+                style="@style/styleSpinner"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height"
+                android:layout_weight=".7"
+                android:entries="@array/lorem_list"
+                android:prompt="@string/Class" />
+        </LinearLayout>
+  
+    
+    
+    </LinearLayout>
+
+ <Button
+        android:id="@+id/btn_seatalloc_classlayout"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="@string/View_Class_Layout"
+        style="@style/styleBtn_singleline_black_14"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/dp_6"
+        />
+     
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_assignmentDetails_PeriodList"
+    >
+
+   <Button
+        android:id="@+id/btn_seatallocRandamAlloc"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="@string/Randon_Allocation"
+        style="@style/styleBtn_singleline_black_14"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/dp_6"
+        />
+
+    </LinearLayout>
+    </LinearLayout>
+ 
+</ScrollView>
+    

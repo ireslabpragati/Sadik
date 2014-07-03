@@ -1,0 +1,11 @@
+INDEX VERSION 1.126+F:\pragatiAndroid\ILMP\SADIKTeacher\.metadata\.plugins\org.eclipse.jdt.core
+26306083.index
+2183823185.index
+982578936.index
+1124531813.index
+2847325655.index
+1611755642.index
+3893144947.index
+2684793485.index
+3505156826.index
+573053873.index

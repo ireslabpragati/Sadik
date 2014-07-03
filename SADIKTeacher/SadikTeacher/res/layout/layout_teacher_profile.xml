@@ -1,0 +1,300 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp_4"
+    android:padding="@dimen/dp_4" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/_btn_AddTeacher_Submit"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/_img_screen_logo"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:src="@drawable/profile_icon" />
+
+            <View
+                android:id="@+id/view_underLine"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_alignBottom="@+id/_img_screen_logo"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_toRightOf="@+id/img_screen_logo"
+                android:background="#B4B4B4" />
+
+            <TextView
+                style="@style/styleText_singleline_black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/Teacher_Profile" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_4" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/styleText_singleline_black_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Student_Details"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/_img_AddTeacher_ProfileImage"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/teacherprofile" 
+                            android:adjustViewBounds="true" android:scaleType="fitXY"/>
+
+                        <Button
+                            android:id="@+id/_btn_AddTeacher_Upload_Image"
+                            style="@style/styleBtn_singleline_black_14"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:text="@string/Upload_Photo" />
+
+                        <RadioGroup
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:gravity="bottom"
+                            android:orientation="vertical" >
+
+                            <RadioButton
+                                android:id="@+id/_radiobtn_AddTeacher_Male"
+                                style="@style/styleText_singleline_black_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/Male" />
+
+                            <RadioButton
+                                android:id="@+id/_radiobtn_AddTeacher_Female"
+                                style="@style/styleText_singleline_black_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Female" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".05"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".55"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/_edit_AddTeacher_Teacher_Id"
+                            style="@style/styleEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/view_height"
+                            android:hint="@string/Teacher_Id" />
+
+                        <EditText
+                            android:id="@+id/_edit_AddTeacher_FName"
+                            style="@style/styleEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/view_height"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:hint="@string/First_Name" android:inputType="textNoSuggestions"/>
+
+                        <EditText
+                            android:id="@+id/_edit_AddTeacher_LName"
+                            style="@style/styleEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/view_height"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:hint="@string/Last_Name" android:inputType="textNoSuggestions"/>
+
+                        <TextView
+                            android:id="@+id/_edit_AddTeacher_DOB"
+                            style="@style/styleEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/view_height"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:hint="@string/Date_of_Birth" />
+
+                        <EditText
+                            android:id="@+id/_edit_AddTeacher_Mobile"
+                            style="@style/styleEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/view_height"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:hint="@string/Mobile" android:inputType="phone" />
+
+                        <EditText
+                            android:id="@+id/_edit_AddTeacher_Email_Address"
+                            style="@style/styleEditText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/view_height"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:hint="@string/Email_Address" android:inputType="textEmailAddress"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <Spinner
+                        android:id="@+id/_spin_AddTeacher_status_deg"
+                        style="@style/styleSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight=".5"
+                        android:entries="@array/lorem_list"
+                        android:prompt="@string/Class" />
+
+                    <Spinner
+                        android:id="@+id/_spin_AddTeacher_Religion"
+                        style="@style/styleSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight=".5"
+                        android:entries="@array/lorem_list"
+                        android:prompt="@string/Religion" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <Spinner
+                        android:id="@+id/_spin_AddTeacher_provience"
+                        style="@style/styleSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight=".5"
+                        android:entries="@array/provience_list"
+                        android:prompt="@string/Provience" />
+
+                    <Spinner
+                        android:id="@+id/_spin_AddTeacher_City"
+                        style="@style/styleSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight=".5"
+                        android:entries="@array/lorem_list"
+                        android:prompt="@string/City" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <Spinner
+                        android:id="@+id/_spin_AddTeacher_District"
+                        style="@style/styleSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight=".5"
+                        android:entries="@array/lorem_list"
+                        android:prompt="@string/District" />
+
+                    <Spinner
+                        android:id="@+id/_spin_AddTeacher_Sub_District_Village"
+                        style="@style/styleSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight=".5"
+                        android:entries="@array/lorem_list"
+                        android:prompt="@string/Sub_District_Village" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <Spinner
+                        android:id="@+id/_spin_AddTeacher_EmpStatus"
+                        style="@style/styleSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight=".5"
+                        android:entries="@array/lorem_list"
+                        android:prompt="@string/District" />
+
+                    <TextView
+                        android:id="@+id/_edit_AddTeacher_DOJ"
+                        style="@style/styleEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_weight=".5"
+                        android:hint="@string/date_of_joining" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/_edit_AddTeacher_Address"
+                    style="@style/styleEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="top"
+                    android:hint="@string/Address"
+                    android:inputType="none"
+                    android:lines="2"
+                    android:singleLine="false" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/_btn_AddTeacher_Submit"
+        style="@style/styleBtn_singleline_black_14"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_25"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/Done" />
+
+</RelativeLayout>

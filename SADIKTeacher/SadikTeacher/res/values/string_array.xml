@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="attendance_type_name">
+        <item>Present</item>
+        <item>Absent</item>
+        <item>Leave</item>
+        <item>Sick</item>
+    </string-array>
+    
+    <string-array name="attendance_type_color">
+        <item>-16738048</item>
+        <item>-6749952</item>
+        <item>-13408771</item>
+        <item>-13312</item>
+    </string-array>
+    
+    <string-array name="caledarSetting_Year">
+        <item>2013-2014</item>
+        <item>2014-2015</item>
+        <item>2016-2017</item>
+        <item>2017-2018</item>
+        <item>2018-2019</item>
+        <item>2019-2020</item>
+        <item>2020-2021</item>
+        <item>2021-2022</item>
+        <item>2023-2024</item>
+        <item>2024-2025</item>
+        <item>2025-2026</item>
+        <item>2026-2027</item>
+        <item>2027-2028</item>
+        <item>2028-2029</item>
+        <item>2029-2030</item>
+    </string-array>
+    <string-array name="caledarSetting_Term">
+        <item>First</item>
+        <item>Second</item>
+    </string-array>
+    <string-array name="section_list">
+        <item>Section 1</item>
+        <item>Section 2</item>
+        <item>Section 3</item>
+        <item>Section 4</item>
+        <item>Section 5</item>
+        <item>Section 6</item>
+        <item>Section 7</item>
+        <item>Section 8</item>
+        <item>Section 9</item>
+        <item>Section 10</item>
+    </string-array>
+    <string-array name="number_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="class_standard">
+        <item>K1</item>
+        <item>K2</item>
+        <item>K3</item>
+        <item>K4</item>
+        <item>K5</item>
+        <item>K6</item>
+        <item>K7</item>
+        <item>K8</item>
+        <item>K9</item>
+        <item>K10</item>
+        <item>K11 BHS</item>
+        <item>K11 IPA</item>
+        <item>K11 IPS</item>
+        <item>K12 BHS</item>
+        <item>K12 IPA</item>
+        <item>K12 IPS</item>
+    </string-array>
+    <string-array name="subjects">
+        <item>Physics</item>
+        <item>Maths</item>
+        <item>English</item>
+        <item>Biology</item>
+        <item>Chemistry</item>
+        <item>Economics</item>
+    </string-array>
+    <string-array name="occupacy_list">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+    <string-array name="provience_list">
+        <item>Bali</item>
+        <item>Banten</item>
+        <item>East Java</item>
+        <item>West Java</item>
+        <item>Jambi</item>
+        <item>Maluku</item>
+        <item>Riau</item>
+    </string-array>
+    
+    <string-array name="city_list">
+        <item>Jakarta</item>
+        <item>Palu</item>
+        <item>Ambon</item>
+        <item>Sofifi</item>
+        <item>Kendari</item>
+        <item>Bandung</item>
+        <item>Padang</item>
+        <item>Makassar</item>
+    </string-array>
+    
+    <string-array name="district_list">
+<item>Badung</item>
+<item>Bangli</item>
+<item>Buleleng</item>
+<item>Klungkung</item>
+<item>Tabanan</item>
+<item>Gianyar</item> 
+    </string-array>
+    
+    <string-array name="subdist_list">
+<item>Abiansemal</item>
+<item>Bangli</item>
+<item>Banjar</item>
+<item>Banjarankan</item>
+<item>Baturiti</item>
+<item>Blahbatuh</item>
+    </string-array>
+    
+        <string-array name="lorem_list">
+        <item>Lorem Ipsum</item>
+        <item>Lorem Ipsum</item>
+        <item>Lorem Ipsum</item>
+        <item>Lorem Ipsum</item>
+        <item>Lorem Ipsum</item>
+    </string-array>
+    
+        <string-array name="religion_list">
+        <item>Islam</item>
+<item>Christianity</item>
+<item>Hinduism</item>
+<item>Buddhism</item>
+<item>Others</item>
+</string-array>        
+
+</resources>

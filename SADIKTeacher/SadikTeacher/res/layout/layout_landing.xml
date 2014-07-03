@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/landingpage_background"
+    android:paddingLeft="@dimen/dp_23"
+    >
+    <ImageView
+        android:layout_gravity="center_horizontal" 
+        android:layout_height="@dimen/dp_64"
+        android:layout_width="@dimen/dp_249"
+        android:src="@drawable/sadiklogo"
+        android:layout_marginTop="@dimen/landing_top_margin"
+        
+        />
+
+</LinearLayout>

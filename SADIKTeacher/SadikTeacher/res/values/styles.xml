@@ -1,0 +1,62 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:soundEffectsEnabled">true</item>
+        <item name="android:hapticFeedbackEnabled">true</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="verticalTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:padding">@dimen/dp_2</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:gravity">center_vertical</item>
+        
+    </style>
+
+    <style name="styleEditText" parent="@style/styleText_singleline_black_14">
+        <item name="android:background">@drawable/blackoutline_whitebg</item>
+        <item name="android:inputType">textNoSuggestions|textVisiblePassword</item>
+        
+        </style>
+
+    <style name="styleEditTextNoPassword" parent="@style/styleText_singleline_black_14">
+        <item name="android:background">@drawable/blackoutline_whitebg</item>
+        
+        </style>
+    
+    
+    <style name="styleSpinner" parent="@style/styleText_singleline_black_14">
+        <item name="android:background">@drawable/spinner_default_holo_light</item>
+        <item name="android:paddingLeft">@dimen/dp_5</item>
+        
+        </style>
+    
+    
+    <style name="styleText_singleline_black_14" parent="android:Widget.TextView">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:gravity">center_vertical</item>
+        
+        </style>
+    
+<style name="styleBtn_singleline_black_14" parent="android:Widget.Button">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:background">@drawable/gradient_green</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        
+        </style>    
+    
+</resources>

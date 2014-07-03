@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="K5 Section1"
+	style="@style/styleText_singleline_black_14"
+	android:id="@+id/txt_ClassSubject_ClassName"
+    />
+<View 
+    android:id="@+id/view_underLine1"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_1"
+    android:background="#B4B4B4"
+    />
+
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout_ClassSubject"
+        >
+
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:weightSum="1.0"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/dp_6"
+    >
+   
+    <Spinner
+        android:id="@+id/spin_ClassSubject_Subject"
+        android:prompt="@string/Subject"
+        android:layout_weight=".77"
+        android:layout_width="0dp" 
+        android:layout_height="@dimen/view_height"
+        android:entries="@array/subjects"
+                style="@style/styleSpinner"
+                android:layout_marginRight="@dimen/dp_4"
+        />
+    <Button
+        android:id="@+id/btn_ClassSubject_More"
+        android:textColor="@android:color/white"
+        android:layout_weight=".23"
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"
+        android:text="@string/More"
+        android:background="@drawable/round_green_bg"
+	android:paddingTop="@dimen/dp_4"
+	android:paddingBottom="@dimen/dp_4"
+	android:textSize="@dimen/sp_13"
+        />
+    </LinearLayout>
+        
+    </LinearLayout>
+</LinearLayout>

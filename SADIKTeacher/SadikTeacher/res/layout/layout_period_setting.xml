@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+     
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/layout_period_setting_bottom"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="@dimen/dp_4"
+    android:layout_margin="@dimen/dp_4"
+    android:id="@+id/layout_period_setting"
+    >
+   
+</LinearLayout>
+</ScrollView>
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:id="@+id/layout_period_setting_bottom"
+    android:padding="@dimen/dp_4"
+    >
+    <Button
+        android:id="@+id/btn_period_setting_done"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="@string/Done"
+        style="@style/styleBtn_singleline_black_14"
+        android:layout_gravity="right"
+        />
+</LinearLayout>
+</RelativeLayout>

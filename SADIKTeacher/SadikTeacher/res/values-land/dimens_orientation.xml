@@ -1,0 +1,6 @@
+<resources>
+
+<dimen name="landing_top_margin">@dimen/dp_100</dimen>
+<dimen name="setting_top_margin">@dimen/dp_10</dimen>
+
+</resources>

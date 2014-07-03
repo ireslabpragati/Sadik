@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:weightSum="1.0"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/txt_subholiday_Date"
+        android:text="26/01/2014"
+        android:layout_weight=".4"
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"
+        style="@style/styleText_singleline_black_14"
+        />
+    <TextView
+        android:id="@+id/txt_subholiday_Holidays"
+        android:text="Republic Day"
+        android:layout_weight=".5"
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"
+        style="@style/styleText_singleline_black_14"
+        />
+    <LinearLayout 
+        android:id="@+id/layout_subholiday_cross"
+        android:layout_weight=".1"
+        android:layout_width="0dp" 
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        
+        >
+        <Button
+        android:layout_width="@dimen/dp_10" 
+        android:layout_height="@dimen/dp_10"
+        android:background="@drawable/cross"
+        android:clickable="false"
+        android:focusable="false"
+        android:enabled="false"
+        />
+    </LinearLayout>
+    </LinearLayout>

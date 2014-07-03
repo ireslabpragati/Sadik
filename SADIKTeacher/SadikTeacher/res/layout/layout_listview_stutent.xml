@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_2"
+    >
+<ImageView
+            android:id="@+id/img_AddStudent_ProfileImage"
+            android:layout_height="@dimen/dp_70"
+            android:layout_width="@dimen/dp_70"
+            android:src="@drawable/studentprofile"
+            android:contentDescription="@null"
+ android:adjustViewBounds="true"            />
+<LinearLayout 
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_3"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:gravity="center_vertical"
+    >
+    <TextView 
+        android:id="@+id/txt_studentList_StudentId"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/Student_Id"
+        style="@style/styleText_singleline_black_14"
+        />
+    <TextView 
+        android:id="@+id/txt_studentList_Name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/Name"
+        style="@style/styleText_singleline_black_14"
+        />
+    <TextView 
+        android:id="@+id/txt_studentList_Age"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/Age"
+        style="@style/styleText_singleline_black_14"
+        />
+</LinearLayout>
+    
+
+ 
+</LinearLayout>

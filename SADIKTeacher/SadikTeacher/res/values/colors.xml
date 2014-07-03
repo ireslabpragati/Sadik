@@ -1,0 +1,7 @@
+<resources>
+
+    <color name="textcolor">#243350</color>
+    <color name="textred">#D32B18</color>
+<color name="holiday_color">#ffcc0000</color>
+<color name="holiday_not_color">#ff008000</color>    
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+
+<dimen name="landing_top_margin">@dimen/dp_160</dimen>
+<dimen name="setting_top_margin">@dimen/dp_50</dimen>
+<dimen name="view_height">@dimen/dp_30</dimen>
+<integer name="percentage_max_length">6</integer>
+</resources>

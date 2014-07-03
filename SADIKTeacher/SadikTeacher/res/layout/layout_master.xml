@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+<RelativeLayout 
+    android:id="@+id/layout_topbar"
+    android:layout_height="@dimen/dp_42"
+    android:background="@drawable/topbar"
+    android:layout_width="fill_parent"
+    >
+
+    <Button 
+        android:id="@+id/btn_Setting_Back"
+        android:layout_width="@dimen/dp_41"
+        android:layout_height="@dimen/dp_21"
+        android:background="@drawable/back"
+        android:layout_marginLeft="@dimen/dp_2"
+        android:layout_centerVertical="true"
+        />
+    <TextView 
+        android:id="@+id/txt_setting_heading"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/Attendance"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_1"
+        />
+    <TextView 
+        android:textSize="@dimen/sp_10"
+        android:id="@+id/txt_setting_invisibleClickable"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        />
+    
+    <Button 
+        android:id="@+id/btn_Setting_Done"
+        android:layout_width="@dimen/dp_41"
+        android:layout_height="@dimen/dp_21"
+        android:background="@android:color/white"
+        android:layout_marginRight="@dimen/dp_2"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+                />
+    <LinearLayout 
+        android:id="@+id/layout_school_ids"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/txt_setting_heading"
+        android:layout_toRightOf="@+id/btn_Setting_Back"
+        android:layout_toLeftOf="@+id/btn_Setting_Done"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_3"
+        android:layout_marginRight="@dimen/dp_3"
+        ></LinearLayout>
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+        android:layout_below="@id/layout_topbar"
+        android:background="@drawable/landingpage_background"
+    android:paddingBottom="@dimen/dp_6"
+    android:paddingTop="@dimen/dp_6"
+    android:paddingRight="@dimen/dp_6"
+    >
+
+<FrameLayout 
+    android:id="@+id/frame1"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/layout_bottombar"
+        android:background="@drawable/whitebackground"
+        android:paddingLeft="@dimen/dp_25"
+        android:paddingRight="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+    >
+  <fragment 
+    android:id="@+id/frag1"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:name="com.sadik.fragments.FragmentDemo"
+    android:background="#FF0000"
+    /> 
+</FrameLayout>  
+  
+<ScrollView
+        android:id="@+id/layout_bottombar"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_minus5"
+        android:layout_marginRight="@dimen/dp_5"
+        >
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+      <!--   Dummy   -->
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+        android:orientation="horizontal"
+    >
+    <View
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="0dp"
+        />
+    <com.sadik.teacher.VerticalTextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        style="@style/verticalTextViewStyle"
+        />
+    </LinearLayout>
+    
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:background="#018B06"
+    >
+    
+    <View
+        android:id="@+id/view_Setting_Profile"
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <com.sadik.teacher.VerticalTextView
+        android:id="@+id/vtxt_Setting_Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="@string/Profile" 
+        style="@style/verticalTextViewStyle"
+        />
+    </LinearLayout>
+
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:background="#CB181F"
+    >
+    
+    <View
+        android:id="@+id/view_Setting_School"
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <com.sadik.teacher.VerticalTextView
+        android:id="@+id/vtxt_Setting_School"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        style="@style/verticalTextViewStyle"
+        android:text="@string/School" />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:background="#E15902"
+    >
+    
+    <View
+        android:id="@+id/view_Setting_Class"
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <com.sadik.teacher.VerticalTextView
+        android:id="@+id/vtxt_Setting_Class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/verticalTextViewStyle"
+        android:text="@string/Class" />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:background="#699A2C"
+    >
+    
+    <View
+        android:id="@+id/view_Setting_Calendar"
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <com.sadik.teacher.VerticalTextView
+        android:id="@+id/vtxt_Setting_Calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        style="@style/verticalTextViewStyle"
+        android:text="@string/Calendar" />
+    </LinearLayout>
+
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00784C"
+        android:layout_gravity="right"
+    >
+    
+    <View
+        android:id="@+id/view_Setting_Assignment"
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <com.sadik.teacher.VerticalTextView
+        android:id="@+id/vtxt_Setting_Assignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        style="@style/verticalTextViewStyle"
+        android:text="@string/Assignment" />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:background="#038CAE"
+    >
+    
+    <View
+        android:id="@+id/view_Setting_Attendance"
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        
+        />
+    <com.sadik.teacher.VerticalTextView
+        android:id="@+id/vtxt_Setting_Attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        style="@style/verticalTextViewStyle"
+        android:text="@string/Attendance" />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:background="#424B99"
+    >
+    
+    <View
+        android:id="@+id/view_Setting_Grade"
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        
+        />
+    <com.sadik.teacher.VerticalTextView
+        android:id="@+id/vtxt_Setting_Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        style="@style/verticalTextViewStyle"
+        android:text="@string/Grade" />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:background="#BF027F"
+    >
+    
+    <View
+        android:id="@+id/view_Setting_Student"
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        
+        />
+    <com.sadik.teacher.VerticalTextView
+        android:id="@+id/vtxt_Setting_Student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        style="@style/verticalTextViewStyle"
+        android:text="@string/Student" />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:background="#008859"
+    >
+    
+    <View
+        android:id="@+id/view_Setting_Seat_Allocation"
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        
+        />
+    <com.sadik.teacher.VerticalTextView
+        android:id="@+id/vtxt_Setting_Seat_Allocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        style="@style/verticalTextViewStyle"
+        android:text="@string/Seat_Allocation" />
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
+</RelativeLayout>

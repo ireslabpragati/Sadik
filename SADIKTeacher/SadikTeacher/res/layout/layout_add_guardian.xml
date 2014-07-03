@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp_4"
+    android:padding="@dimen/dp_4" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/layout_AddSchool_bottom"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/img_screen_logo"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:src="@drawable/profile_icon" />
+
+            <View
+                android:id="@+id/view_underLine"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_alignBottom="@+id/img_screen_logo"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_toRightOf="@+id/img_screen_logo"
+                android:background="#B4B4B4" />
+
+            <TextView
+                style="@style/styleText_singleline_black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view_underLine"
+                android:layout_alignRight="@+id/view_underLine"
+                android:text="@string/Add_Student" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_4" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/styleText_singleline_black_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Guardian_Details" />
+
+                
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <EditText
+                        android:id="@+id/edit_AddGuardian_FathersName"
+                        style="@style/styleEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight=".5"
+                        android:hint="@string/Father_Name"
+                        android:layout_marginRight="@dimen/dp_2"
+                         />
+
+                    <EditText
+                        android:id="@+id/edit_AddGuardian_FatherDOB"
+                        style="@style/styleEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight=".5"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:hint="@string/Date_of_Birth"
+                        android:focusable="false"
+                        android:clickable="true"
+                         />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <EditText
+                        android:id="@+id/edit_AddGuardian_MothersName"
+                        style="@style/styleEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight=".5"
+                        android:hint="@string/Mother_Name"
+                        android:layout_marginRight="@dimen/dp_2"
+                         />
+
+                    <EditText
+                        android:id="@+id/edit_AddGuardian_MotherDOB"
+                        style="@style/styleEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight=".5"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:hint="@string/Date_of_Birth"
+                        android:focusable="false"
+                        android:clickable="true"
+                         />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0" >
+
+                    <EditText
+                        android:id="@+id/edit_AddGuardian_Email_Address"
+                        style="@style/styleEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight=".5"
+                        android:hint="@string/Email_Address"
+                        android:layout_marginRight="@dimen/dp_2"
+                        android:inputType="textEmailAddress"
+                         />
+
+                    <EditText
+                        android:id="@+id/edit_AddGuardian_Mobile"
+                        style="@style/styleEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight=".5"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:inputType="phone"
+                        android:hint="@string/Mobile" />
+                </LinearLayout>
+                </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:id="@+id/layout_AddSchool_bottom"
+    android:padding="@dimen/dp_4"
+    >
+    <Button
+        android:id="@+id/btn_AddSchool_Back"
+        android:layout_width="@dimen/dp_38" 
+        android:layout_height="@dimen/dp_25"
+        android:background="@drawable/back_green"
+	android:layout_gravity="right"
+        />
+        <Button
+        android:id="@+id/btn_AddSchool_Done"
+        android:layout_width="wrap_content" 
+        android:layout_height="@dimen/dp_25"
+        android:background="@drawable/gradient_green"
+	android:layout_gravity="right"
+	android:text="@string/Done"
+	android:textColor="@android:color/white"
+	android:paddingLeft="@dimen/dp_5"
+	android:paddingRight="@dimen/dp_5"
+	android:layout_marginLeft="@dimen/dp_5"
+        />
+    
+</LinearLayout>
+
+</RelativeLayout>

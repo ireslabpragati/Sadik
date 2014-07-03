@@ -1,0 +1,276 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_4"
+    android:layout_margin="@dimen/dp_4"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:layout_above="@+id/btn_AddStudent_Forword"
+    >
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    
+<ImageView 
+    android:id="@+id/img_screen_logo"
+    android:layout_width="@dimen/dp_30"
+    android:layout_height="@dimen/dp_30"
+    android:src="@drawable/profile_icon"
+    />
+<View 
+    android:id="@+id/view_underLine"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_1"
+    android:layout_alignBottom="@+id/img_screen_logo"
+    android:layout_toRightOf="@+id/img_screen_logo"
+    android:background="#B4B4B4"
+    android:layout_marginLeft="@dimen/dp_15"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Add_Student"
+    android:layout_alignRight="@+id/view_underLine"
+    android:layout_above="@+id/view_underLine"
+	style="@style/styleText_singleline_black_14"
+    />
+
+</RelativeLayout>
+    
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_4"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+    <TextView
+        android:text="@string/Student_Details"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+	style="@style/styleText_singleline_black_14"
+        />
+    
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:weightSum="1.0"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:layout_weight=".4"
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+                <ImageView
+            android:id="@+id/img_AddStudent_ProfileImage"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:src="@drawable/studentprofile"
+ android:adjustViewBounds="true"            />
+        
+        <Button
+        android:id="@+id/btn_AddStudent_Upload_Image"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="@string/Upload_Photo"
+        style="@style/styleBtn_singleline_black_14"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/dp_5"
+        />
+                  <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            >
+            <RadioButton
+                android:id="@+id/radiobtn_AddStudent_Male"
+                style="@style/styleText_singleline_black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/Male" />
+              
+            <RadioButton
+                android:id="@+id/radiobtn_AddStudent_Female"
+                style="@style/styleText_singleline_black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Female" />
+        </RadioGroup>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_weight=".05"
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+    
+    <LinearLayout
+        android:layout_weight=".55"
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <EditText
+        android:id="@+id/edit_AddStudent_StudentId"
+        android:layout_width="fill_parent" 
+        android:layout_height="@dimen/view_height"
+        style="@style/styleEditText"
+        android:hint="@string/Student_Id"
+        />
+        <EditText
+        android:id="@+id/edit_AddStudent_FName"
+        android:layout_width="fill_parent" 
+        android:layout_height="@dimen/view_height"
+        style="@style/styleEditText"
+        android:layout_marginTop="@dimen/dp_5"
+        android:hint="@string/First_Name"
+        
+        />
+        <EditText
+        android:id="@+id/edit_AddStudent_LName"
+        android:layout_width="fill_parent" 
+        android:layout_height="@dimen/view_height"
+        style="@style/styleEditText"
+        android:layout_marginTop="@dimen/dp_5"
+        android:hint="@string/Last_Name"
+        />
+        <TextView
+        android:id="@+id/txt_AddStudent_DOB"
+        android:layout_width="fill_parent" 
+        android:layout_height="@dimen/view_height"
+        style="@style/styleEditText"
+        android:layout_marginTop="@dimen/dp_5"
+        android:hint="@string/Date_of_Birth"
+        />
+        <EditText
+        android:id="@+id/edit_AddStudent_Mobile"
+        android:layout_width="fill_parent" 
+        android:layout_height="@dimen/view_height"
+        style="@style/styleEditText"
+        android:layout_marginTop="@dimen/dp_5"
+        android:hint="@string/Mobile"
+        android:inputType="phone"
+        />
+        <EditText
+        android:id="@+id/edit_AddStudent_Email_Address"
+        android:layout_width="fill_parent" 
+        android:layout_height="@dimen/view_height"
+        style="@style/styleEditText"
+        android:layout_marginTop="@dimen/dp_5"
+        android:hint="@string/Email_Address"
+        android:inputType="textEmailAddress"
+        />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:weightSum="1.0"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/dp_5"
+    >
+    <Spinner
+                android:id="@+id/spin_AddStudent_Class"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height"
+                android:layout_weight=".5"
+                android:entries="@array/lorem_list"
+                style="@style/styleSpinner"
+                android:prompt="@string/Class" />
+   <Spinner
+                android:id="@+id/spin_AddStudent_Religion"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height"
+                android:layout_weight=".5"
+                android:entries="@array/religion_list"
+                style="@style/styleSpinner"
+                android:prompt="@string/Religion" />
+    </LinearLayout>
+    <LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:weightSum="1.0"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/dp_5"
+    >
+    <Spinner
+                android:id="@+id/spin_AddStudent_provience"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height"
+                android:layout_weight=".5"
+                android:entries="@array/provience_list"
+                style="@style/styleSpinner"
+                android:prompt="@string/Provience" />
+   <Spinner
+                android:id="@+id/spin_AddStudent_City"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height"
+                android:layout_weight=".5"
+                android:entries="@array/city_list"
+                style="@style/styleSpinner"
+                android:prompt="@string/City" />
+    </LinearLayout>
+    <LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:weightSum="1.0"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/dp_5"
+    >
+    <Spinner
+                android:id="@+id/spin_AddStudent_District"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height"
+                android:layout_weight=".5"
+                android:entries="@array/district_list"
+                style="@style/styleSpinner"
+                android:prompt="@string/District" />
+   <Spinner
+                android:id="@+id/spin_AddStudent_Sub_District_Village"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/view_height"
+                android:layout_weight=".5"
+                android:entries="@array/subdist_list"
+                style="@style/styleSpinner"
+                android:prompt="@string/Sub_District_Village" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edit_AddStudent_Address"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        style="@style/styleEditText"
+        android:layout_marginTop="@dimen/dp_5"
+        android:singleLine="false"
+        android:lines="2"
+        android:inputType="none"
+        android:gravity="top"
+        android:hint="@string/Address"
+        
+        />
+   
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    
+<Button
+        android:id="@+id/btn_AddStudent_Forword"
+        android:layout_width="@dimen/dp_38" 
+        android:layout_height="@dimen/dp_25"
+        android:background="@drawable/forward"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+ 
+</RelativeLayout>

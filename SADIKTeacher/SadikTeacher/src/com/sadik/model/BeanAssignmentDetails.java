@@ -1,0 +1,97 @@
+package com.sadik.model;
+
+public class BeanAssignmentDetails {
+	
+	public String _ASSIGNMENT_SCHOOL_ID;
+ 
+	public String _ASSIGNMENT_CLASS  ;
+	public String _ASSIGNMENT_SUBJECT  ;
+	public String _ASSIGNMENT_EXAM_TYPE  ;
+	public String _ASSIGNMENT_EXAM_ID  ;
+	public String _ASSIGNMENT_GRADE_CATEGORY  ;
+	public String _ASSIGNMENT_GRADE_TYPE  ;
+	public String _ASSIGNMENT_MIN_POINT_KKH  ;
+	public String _ASSIGNMENT_WEIGHT  ;
+	public String _ASSIGNMENT_DATE  ;
+	public String _ASSIGNMENT_PRIOD  ;
+	public String _SCHOOL_PKEY;
+	
+	
+	
+	public String get_SCHOOL_PKEY() {
+		return _SCHOOL_PKEY;
+	}
+	public void set_SCHOOL_PKEY(String _SCHOOL_PKEY) {
+		this._SCHOOL_PKEY = _SCHOOL_PKEY;
+	}
+	public String get_ASSIGNMENT_SCHOOL_ID() {
+		return _ASSIGNMENT_SCHOOL_ID;
+	}
+	public void set_ASSIGNMENT_SCHOOL_ID(String _ASSIGNMENT_SCHOOL_ID) {
+		this._ASSIGNMENT_SCHOOL_ID = _ASSIGNMENT_SCHOOL_ID;
+	}
+	public String get_ASSIGNMENT_CLASS() {
+		return _ASSIGNMENT_CLASS;
+	}
+	public void set_ASSIGNMENT_CLASS(String _ASSIGNMENT_CLASS) {
+		this._ASSIGNMENT_CLASS = _ASSIGNMENT_CLASS;
+	}
+	public String get_ASSIGNMENT_SUBJECT() {
+		return _ASSIGNMENT_SUBJECT;
+	}
+	public void set_ASSIGNMENT_SUBJECT(String _ASSIGNMENT_SUBJECT) {
+		this._ASSIGNMENT_SUBJECT = _ASSIGNMENT_SUBJECT;
+	}
+	public String get_ASSIGNMENT_EXAM_TYPE() {
+		return _ASSIGNMENT_EXAM_TYPE;
+	}
+	public void set_ASSIGNMENT_EXAM_TYPE(String _ASSIGNMENT_EXAM_TYPE) {
+		this._ASSIGNMENT_EXAM_TYPE = _ASSIGNMENT_EXAM_TYPE;
+	}
+	public String get_ASSIGNMENT_EXAM_ID() {
+		return _ASSIGNMENT_EXAM_ID;
+	}
+	public void set_ASSIGNMENT_EXAM_ID(String _ASSIGNMENT_EXAM_ID) {
+		this._ASSIGNMENT_EXAM_ID = _ASSIGNMENT_EXAM_ID;
+	}
+	public String get_ASSIGNMENT_GRADE_CATEGORY() {
+		return _ASSIGNMENT_GRADE_CATEGORY;
+	}
+	public void set_ASSIGNMENT_GRADE_CATEGORY(String _ASSIGNMENT_GRADE_CATEGORY) {
+		this._ASSIGNMENT_GRADE_CATEGORY = _ASSIGNMENT_GRADE_CATEGORY;
+	}
+	public String get_ASSIGNMENT_GRADE_TYPE() {
+		return _ASSIGNMENT_GRADE_TYPE;
+	}
+	public void set_ASSIGNMENT_GRADE_TYPE(String _ASSIGNMENT_GRADE_TYPE) {
+		this._ASSIGNMENT_GRADE_TYPE = _ASSIGNMENT_GRADE_TYPE;
+	}
+	public String get_ASSIGNMENT_MIN_POINT_KKH() {
+		return _ASSIGNMENT_MIN_POINT_KKH;
+	}
+	public void set_ASSIGNMENT_MIN_POINT_KKH(String _ASSIGNMENT_MIN_POINT_KKH) {
+		this._ASSIGNMENT_MIN_POINT_KKH = _ASSIGNMENT_MIN_POINT_KKH;
+	}
+	public String get_ASSIGNMENT_WEIGHT() {
+		return _ASSIGNMENT_WEIGHT;
+	}
+	public void set_ASSIGNMENT_WEIGHT(String _ASSIGNMENT_WEIGHT) {
+		this._ASSIGNMENT_WEIGHT = _ASSIGNMENT_WEIGHT;
+	}
+	public String get_ASSIGNMENT_DATE() {
+		return _ASSIGNMENT_DATE;
+	}
+	public void set_ASSIGNMENT_DATE(String _ASSIGNMENT_DATE) {
+		this._ASSIGNMENT_DATE = _ASSIGNMENT_DATE;
+	}
+	public String get_ASSIGNMENT_PRIOD() {
+		return _ASSIGNMENT_PRIOD;
+	}
+	public void set_ASSIGNMENT_PRIOD(String _ASSIGNMENT_PRIOD) {
+		this._ASSIGNMENT_PRIOD = _ASSIGNMENT_PRIOD;
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/layout_confschool2_bottom"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="@dimen/dp_4"
+    android:layout_margin="@dimen/dp_4"
+    android:id="@+id/layout_confschool2"
+    >
+   
+</LinearLayout>
+</ScrollView>
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:id="@+id/layout_confschool2_bottom"
+    android:padding="@dimen/dp_4"
+    >
+    <Button
+        android:id="@+id/btn_ConfSchool2_Back"
+        android:layout_width="@dimen/dp_38" 
+        android:layout_height="@dimen/dp_25"
+        android:background="@drawable/back_green"
+	android:layout_gravity="right"
+        />
+        <Button
+        android:id="@+id/btn_ConfSchool2_AddMoreSchool"
+        android:layout_width="wrap_content" 
+        android:layout_height="@dimen/dp_25"
+        android:background="@drawable/gradient_green"
+	android:layout_gravity="right"
+	android:text="@string/Add_More_Schools"
+	android:textColor="@android:color/white"
+	android:paddingLeft="@dimen/dp_5"
+	android:paddingRight="@dimen/dp_5"
+	android:layout_marginLeft="@dimen/dp_5"
+        />
+        <Button
+        android:id="@+id/btn_ConfSchool2_Done"
+        android:layout_width="wrap_content" 
+        android:layout_height="@dimen/dp_25"
+        android:background="@drawable/gradient_green"
+	android:layout_gravity="right"
+	android:text="@string/Done"
+	android:textColor="@android:color/white"
+	android:paddingLeft="@dimen/dp_5"
+	android:paddingRight="@dimen/dp_5"
+	android:layout_marginLeft="@dimen/dp_5"
+        />
+    
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight=".95" 
+    >
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    
+<ImageView 
+    android:id="@+id/img_screen_logo"
+    android:layout_width="@dimen/dp_30"
+    android:layout_height="@dimen/dp_30"
+    android:src="@drawable/grade_icon"
+    />
+<View 
+    android:id="@+id/view_underLine"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_1"
+    android:layout_alignBottom="@+id/img_screen_logo"
+    android:layout_toRightOf="@+id/img_screen_logo"
+    android:background="#B4B4B4"
+    android:layout_marginLeft="@dimen/dp_15"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Grade_Setting"
+    android:layout_alignRight="@+id/view_underLine"
+    android:layout_above="@+id/view_underLine"
+	style="@style/styleText_singleline_black_14"
+    />
+
+</RelativeLayout>
+
+															    <!-- 	Grade Points Starts		-->
+<ScrollView    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/dp_4"
+    android:layout_margin="@dimen/dp_4"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+    
+    <TextView
+        android:text="@string/Point"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+	style="@style/styleText_singleline_black_14"
+    android:layout_marginTop="@dimen/dp_5"
+        />
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="@dimen/dp_5"
+    android:background="#88FFFFFF"
+    >
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1.0" >
+
+
+
+    <TextView
+        android:text="@string/Min"
+        android:layout_weight=".45"
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"
+        style="@style/styleText_singleline_black_14"
+        android:textColor="@color/textred"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".10" />
+
+    <TextView
+        android:text="@string/Max"
+        android:layout_weight=".45"
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"
+        style="@style/styleText_singleline_black_14"
+        android:textColor="@color/textred"
+        android:textStyle="bold"
+        />
+
+
+
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1.0" >
+
+
+
+    <EditText
+        android:id="@+id/edit_setting_grade_type_point_min"
+        style="@style/styleEditText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:inputType="numberDecimal"
+       android:maxLength="@integer/percentage_max_length"
+        android:layout_weight=".45" />
+
+    <TextView
+        style="@style/styleText_singleline_black_14"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".10"
+        android:gravity="center"
+        android:text="@string/to" />
+
+    <EditText
+        android:id="@+id/edit_setting_grade_type_point_max"
+        style="@style/styleEditText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:inputType="numberDecimal"
+       android:maxLength="@integer/percentage_max_length"
+        android:layout_weight=".45" />
+    
+        <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".10" />
+    
+
+
+</LinearLayout>
+
+
+    
+    </LinearLayout>
+    
+															    <!-- 	Grade Points Ends		-->
+
+
+															    <!-- 	Grade Score Starts		-->
+
+
+    <TextView
+        android:text="@string/Score"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+	style="@style/styleText_singleline_black_14"
+    android:layout_marginTop="@dimen/dp_5"
+        />
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="@dimen/dp_5"
+    android:background="#88FFFFFF"
+    >
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1.0" >
+
+
+
+    <TextView
+        android:text="@string/Min"
+        android:layout_weight=".45"
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"
+        style="@style/styleText_singleline_black_14"
+        android:textColor="@color/textred"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".10" />
+
+    <TextView
+        android:text="@string/Max"
+        android:layout_weight=".45"
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"
+        style="@style/styleText_singleline_black_14"
+        android:textColor="@color/textred"
+        android:textStyle="bold"
+        />
+
+
+
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1.0" >
+
+
+
+    <EditText
+        android:id="@+id/edit_setting_grade_type_score_min"
+        style="@style/styleEditText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:inputType="numberDecimal"
+       android:maxLength="@integer/percentage_max_length"
+        android:layout_weight=".45" />
+
+    <TextView
+        style="@style/styleText_singleline_black_14"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".10"
+        android:gravity="center"
+        android:text="@string/to" />
+
+    <EditText
+        android:id="@+id/edit_setting_grade_type_score_max"
+        style="@style/styleEditText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:inputType="numberDecimal"
+        android:maxLength="@integer/percentage_max_length"
+        android:layout_weight=".45" />
+    
+        <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".10" />
+    
+
+
+</LinearLayout>
+
+
+    
+    </LinearLayout>
+
+
+
+															    <!-- 	Grade Score Ends		-->
+
+															    <!-- 	Grade Letter Starts		-->
+
+
+    <TextView
+        android:text="@string/Letter"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+	style="@style/styleText_singleline_black_14"
+    android:layout_marginTop="@dimen/dp_5"
+        />
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="@dimen/dp_5"
+    android:background="#88FFFFFF"
+    >
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1.0" >
+
+
+
+    <TextView
+        android:text="@string/Grade"
+        android:layout_weight=".18"
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"
+        style="@style/styleText_singleline_black_14"
+        android:textColor="@color/textred"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".09" />
+
+    <TextView
+        android:text="@string/Min"
+        android:layout_weight=".18"
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"
+        style="@style/styleText_singleline_black_14"
+        android:textColor="@color/textred"
+        android:textStyle="bold"
+        />
+        <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1" />
+
+    <TextView
+        android:text="@string/Max"
+        android:layout_weight=".18"
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content"
+        style="@style/styleText_singleline_black_14"
+        android:textColor="@color/textred"
+        android:textStyle="bold"
+        />
+
+
+
+</LinearLayout>
+
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_3"
+    android:paddingBottom="@dimen/dp_3"
+    android:orientation="horizontal"
+    android:weightSum="1.0" >
+
+    <EditText
+        android:id="@+id/edit_setting_grade_type_letter_name"
+        style="@style/styleEditText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".18" />
+
+    <TextView
+        style="@style/styleText_singleline_black_14"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".09"
+        android:gravity="center"
+        android:text="@string/equal" />
+
+    <EditText
+        android:id="@+id/edit_setting_grade_type_letter_min"
+        style="@style/styleEditText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:inputType="numberDecimal"
+        android:maxLength="@integer/percentage_max_length"
+        android:layout_weight=".18" />
+
+    <TextView
+        style="@style/styleText_singleline_black_14"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:text="@string/to" />
+
+    <EditText
+        android:id="@+id/edit_setting_grade_type_letter_max"
+        style="@style/styleEditText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:inputType="numberDecimal"
+       android:maxLength="@integer/percentage_max_length"
+        android:layout_weight=".18" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".05" />
+
+    <Button
+        android:id="@+id/btn_setting_grade_type_More"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".23"
+        android:background="@drawable/round_green_bg"
+        android:paddingBottom="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_4"
+        android:text="@string/More"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_13" />
+
+</LinearLayout>
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_setting_grade_type_List" />
+
+    </LinearLayout>
+    
+
+ 
+    
+
+															    <!-- 	Grade Letter Ends		-->
+
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/dp_6"
+    android:layout_weight=".05"
+    android:weightSum="1.0"
+    >
+        <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/view_height"
+        android:layout_weight=".80" />
+    
+
+<Button
+        android:id="@+id/btn_setting_grade_type_done"
+        android:layout_width="0dp" 
+        android:layout_height="@dimen/view_height"
+        android:text="@string/Done"
+        style="@style/styleBtn_singleline_black_14"
+        android:layout_weight=".20"
+        android:layout_margin="@dimen/dp_5"
+        android:layout_gravity="center_vertical|right"
+        />
+    </LinearLayout>
+    </LinearLayout>

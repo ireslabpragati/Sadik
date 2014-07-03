@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/landingpage_background"
+    android:paddingBottom="@dimen/dp_30"
+    android:paddingLeft="@dimen/dp_45"
+    android:paddingRight="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_30"
+    tools:context=".LandingActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lay_Home_Settings"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:id="@+id/lay_Home_Attendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".333"
+            android:orientation="vertical" >
+
+            <!--
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Attendance" 
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/sp_15"
+        />
+            -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_Home_Grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".333"
+            android:orientation="vertical" >
+
+            <!--
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Grade" 
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/sp_15"
+        />
+            -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_Home_Reports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".333"
+            android:orientation="vertical" >
+
+            <!--
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Reports" 
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/sp_15"
+        android:shadowColor="#FF0000"
+        android:shadowDy="15"
+        android:shadowRadius="15"
+        android:shadowDx="15"
+        />
+            -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_Home_Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <!--
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Settings" 
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/sp_15"
+        android:layout_marginRight="@dimen/dp_6"
+        />
+        -->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="68dp"
+        android:text="@string/Welcome_to_Sadik_Mobile_Teacher_application"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp_25" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txtwelcome"
+        android:background="@drawable/namesection"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="184dp"
+            android:layout_height="wrap_content" >
+
+             
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
